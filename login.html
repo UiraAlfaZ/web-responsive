@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\metropolis-2.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <title>login</title>
+    <style>
+    .container {
+      max-width: 450px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-submit {
+      border-radius: 25px;
+      width: 420px;
+      background-color: #db3022;
+    }
+    a {
+      text-transform: none;
+      color: #db3022;
+    }
+    .btn-outline {
+    background-color: transparent;
+    border: 2px solid #9B9B9B;
+    color: #9B9B9B;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    border: solid #db3022;
+    background-color: #db3022;
+    color: #fff;
+  }
+  .btn-outline:focus,
+  .btn-outline:active {
+    border: solid #db3022;
+    background-color: #db3022;
+    color: #fff;
+    outline: none; /* Remove default focus outline */
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/img/Group 1159.png" alt="logo" class="mb-3" />
+        <p class="font-weight-bold text-center">Please login with your account</p>
+        <div class="d-flex justify-content-center mb-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline">Customer</button>
+              <button type="button" class="btn btn-outline">Seller</button>
+            </div>
+        </div>
+  
+        <form>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group form-check text-right">
+            <a href="#" class="font-weight-normal">Forgot Password?</a>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-submit font-weight-bold text-white mb-3"
+          >
+            Primary
+          </button>
+          <p class="text-center">
+            Don't have a Tokopedia account? <a href="register.html">Register</a>
+          </p>
+        </form>
+    </div>
+<script src="assets\js\bootstrap.bundle.min.js"></script>
+<script src="assets\js\jquery.slim.min.js"></script>
+</body>
+</html>

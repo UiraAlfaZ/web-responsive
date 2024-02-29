@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\css\metropolis-2.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <title>login</title>
+    <style>
+    .container {
+      max-width: 450px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-submit {
+      border-radius: 25px;
+      width: 420px;
+      background-color: #db3022;
+    }
+    a {
+      text-transform: none;
+      color: #db3022;
+    }
+    .btn-outline {
+    background-color: transparent;
+    border: 2px solid #9B9B9B;
+    color: #9B9B9B;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    border: solid #db3022;
+    background-color: #db3022;
+    color: #fff;
+  }
+  .btn-outline:focus,
+  .btn-outline:active {
+    border: solid #db3022;
+    background-color: #db3022;
+    color: #fff;
+    outline: none; /* Remove default focus outline */
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/img/Group 1159.png" alt="logo" class="mb-3" />
+        <p class="font-weight-bold text-center">Please sign up with your account</p>
+        <div class="d-flex justify-content-center mb-3">
+            <div class="btn-group">
+              <button class="btn btn-outline" onclick="showCust()">Customer</button>
+              <button class="btn btn-outline" onclick="showSell()">Seller</button>
+            </div>
+        </div>
+  
+        <form>
+          <div id="form-seller">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName1"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPhoneNumber"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputStoreName"
+                placeholder="Store name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <!-- <div id="form-customer" class="hidden">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName"
+                aria-describedby="emailHelp"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword"
+                placeholder="Password"
+              />
+            </div>
+          </div> -->
+          <button
+            type="submit"
+            class="btn btn-submit font-weight-bold text-white mb-3"
+          >
+            Primary
+          </button>
+          <p class="text-center">
+            Already have a Tokopedia account? <a href="login.html">Login</a>
+          </p>
+        </form>
+    </div>
+  <script>
+    function showSell() {
+    document.getElementById('form-seller').classList.remove('hidden');
+    document.getElementById('form-customer').classList.add('hidden');
+  }
+
+  function showCust() {
+    document.getElementById('form-customer').classList.remove('hidden');
+    document.getElementById('form-seller').classList.add('hidden');
+  }
+  </script>
+<script src="assets\js\bootstrap.bundle.min.js"></script>
+<script src="assets\js\jquery.slim.min.js"></script>
+</body>
+</html>
